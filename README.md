@@ -71,7 +71,7 @@ api/
 
 ## Prerequisites
 - Python 3.10+
-- PostgreSQL or SQLite
+- SQLite
 - Docker, Docker Compose
 
 ---
@@ -149,5 +149,6 @@ http://localhost:8000/admin/
 - /my-leave-requests/
 - /leave-requests/
 - /leave-requests/<id>/
+- /companies/
 
 ---
