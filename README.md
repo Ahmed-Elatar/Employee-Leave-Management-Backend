@@ -7,15 +7,14 @@ The system supports employees submitting leave requests, while HR users can revi
 
 ## Table of Contents
 
-- Features
-- Project Structure
-- Prerequisites
-- Installation
-- Environment Variables
-- Usage
-- API Overview
-- URLs Map
-- Screenshots
+- [Features](#features)
+- [Project Structure](#Project-Structure)
+- [Prerequisites](#Prerequisites)
+- [Installation](#Installation)
+- [Environment Variables](#Environment-Variables)
+- [Usage](#Usage)
+- [API Overview](#API-Overview)
+- [URLs Map](#URLs-Map)    
 
 ---
 
