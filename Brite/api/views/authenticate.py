@@ -1,80 +1,4 @@
-
-from django.shortcuts import render,redirect,get_object_or_404
-# Create your views here.
-from django.http import HttpResponse
-from django.contrib.auth import authenticate,login,logout,get_user
-from django.contrib.auth.models import User, Group
-from .forms import *
-from .models import *
-from django.views.generic import CreateView,FormView
-from django.urls import reverse_lazy
-from django.http import JsonResponse
-from .forms import SignupForm
-from .models import User, Employee
-from rest_framework import generics
-from .serializers import *
-
-def index(request):
-    return HttpResponse(request.user.username)
-
-
-
-
-
-
-
-
-
-class CompaniesView(generics.ListCreateAPIView):
-
-    queryset = Company.objects.all()
-    serializer_class = CompanySerializer
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-####################################################################################################
-##################                  Authentication
-
-
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework import status
-from .forms import SignupForm
-from django.contrib.auth import authenticate, login
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+from .base import *
 
 
 
@@ -147,4 +71,4 @@ class LoginAPIView(APIView):
 # logout page
 def user_logout(request):
     logout(request)
-    return redirect('login')
+    return redirect('index')
